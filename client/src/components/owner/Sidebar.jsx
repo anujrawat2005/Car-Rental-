@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { assets,  ownerMenuLinks } from '../../assets/assets'
-import { NavLink, useLocation } from 'react-router';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useAppContext } from '../../context/AppContext';
 import toast from 'react-hot-toast';
 
-const SideBar = () => {
+const Sidebar = () => {
 
     const {user,axios,fetchUser} = useAppContext()
     const location  = useLocation()
@@ -85,5 +85,5 @@ const SideBar = () => {
   )
 }
 
-export default SideBar
+export default Sidebar
 
