@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import NavbarOwner from '../../components/owner/NavbarOwner'
-import Sidebar from '../../components/owner/SideBar'
-import { Outlet } from 'react-router'
+import Sidebar from '../../components/owner/Sidebar'
+import { Outlet } from 'react-router-dom'
 import { useAppContext } from '../../context/AppContext'
 
 const Layout = () => {
@@ -25,4 +25,4 @@ const Layout = () => {
   )
 }
 
-export default Layout;
+export default Layout
